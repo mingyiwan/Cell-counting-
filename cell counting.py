@@ -22,7 +22,7 @@ animal=[]
 
 
 #read directory
-Master_folder=r"C:\Users\mingy\OneDrive\Desktop\RNAscope cell count\whola\new batch";
+Master_folder="put the location of the master folder containing all the sub-folders for each individual brains/animals";
 sub_folder=os.listdir(Master_folder)
 list_folder=[]
 for i in range (len(sub_folder)):
@@ -126,4 +126,5 @@ data_frame={
 df=pd.DataFrame(data_frame)
 filepath=os.path.join(Master_folder,"batch3.csv")
 df.to_csv(filepath)
+
 
